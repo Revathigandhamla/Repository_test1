@@ -11,19 +11,6 @@ buildSystemDetails:
   author: null
   createdAt: '2025-07-30 16:09:43'
 pipelines:
-  pipelines/Pipeline_test1:
-    name: Pipeline_test1
-    description: ''
-    author: gandamala.revathi@wipro.com
-    mode: batch
-    artefactID: ''
-    language: python
-    createdAt: '2025-07-30 16:09:43'
-    datasets:
-      inputs: []
-      outputs: []
-    subgraphs: []
-    dependencies: {}
   pipelines/pipeline_test2:
     name: pipeline_test2
     description: ''
@@ -63,18 +50,18 @@ sqlSources: {}
 sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
-- modifiedAt: '2025-07-30T16:09:43.330983Z'
+- type: plibMaven
+  modifiedAt: '2025-07-30T16:29:41.582648Z'
   name: plibMaven
   version: 8.11.0
-  id: '1105714394'
-  createdAt: '2025-07-30T16:09:43.330983Z'
-  type: plibMaven
-- modifiedAt: '2025-07-30T16:09:43.330983Z'
+  id: '650330654'
+  createdAt: '2025-07-30T16:29:41.582498Z'
+- type: plibPypi
+  modifiedAt: '2025-07-30T16:29:41.584049Z'
   name: plibPypi
   version: 2.0.11
-  id: '323457444'
-  createdAt: '2025-07-30T16:09:43.330983Z'
-  type: plibPypi
+  id: '1874605918'
+  createdAt: '2025-07-30T16:29:41.584003Z'
 projectDependencies:
   '12654':
     projectUID: 12654

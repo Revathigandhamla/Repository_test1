@@ -9,5 +9,5 @@ class Utils:
     def initializeFromArgs(spark: SparkSession, args):
         global Config
         Config.updateSpark(spark)
-        conf = parse_config(args, config_package = "prophecy_config_instances.pipeline_test2")
+        conf = parse_config(args, config_package = "prophecy_config_instances.pipeline_test1")
         Config.update(**conf)

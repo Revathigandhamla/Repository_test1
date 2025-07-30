@@ -11,14 +11,14 @@ buildSystemDetails:
   author: null
   createdAt: '2025-07-30 16:09:43'
 pipelines:
-  pipelines/pipeline_test2:
-    name: pipeline_test2
+  pipelines/pipeline_test1:
+    name: pipeline_test1
     description: ''
     author: gandamala.revathi@wipro.com
     mode: batch
     artefactID: ''
     language: python
-    createdAt: '2025-07-30 16:28:43'
+    createdAt: '2025-07-30 16:42:54'
     datasets:
       inputs: []
       outputs: []

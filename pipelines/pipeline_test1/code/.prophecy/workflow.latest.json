@@ -14,9 +14,9 @@
       "sparkConfigJinjaEnabled" : true
     },
     "id" : "1",
-    "uri" : "pipelines/pipeline_test2",
+    "uri" : "pipelines/pipeline_test1",
     "pipelineSettingsInfo" : {
-      "applicationName" : "pipeline_test2",
+      "applicationName" : "pipeline_test1",
       "hasApplication" : true,
       "isFunctionsPackageDirDefined" : true,
       "isNullValuesInUnitTestsEnabled" : true,
@@ -81,60 +81,17 @@
       "enabled" : false,
       "value" : 1000
     },
-    "topLevelPackage" : "pipeline_test2",
-    "configTopLevelPackage" : "pipeline_test2",
+    "topLevelPackage" : "pipeline_test1",
+    "configTopLevelPackage" : "pipeline_test1",
     "configurationVersion" : "v2"
   },
   "connections" : [ ],
-  "processes" : {
-    "n0mhyC3-0Etgdy_gHb8XJ$$MyypOY6WvM6nWBwGV8lVX" : {
-      "id" : "n0mhyC3-0Etgdy_gHb8XJ$$MyypOY6WvM6nWBwGV8lVX",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "Source_0",
-        "slug" : "Source_0",
-        "x" : -420,
-        "y" : -120,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "8MxYWgWHPLa9vQwDJrrpn$$KDh5X7Ush47wv1NABIWUs",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : { }
-    }
-  },
+  "processes" : { },
   "ports" : {
     "inputs" : [ ],
     "outputs" : [ ],
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  },
-  "diagnostics" : [ {
-    "property" : "$.workflow.processes.n0mhyC3-0Etgdy_gHb8XJ$$MyypOY6WvM6nWBwGV8lVX.properties.datasetId",
-    "range" : {
-      "start" : {
-        "line" : 0,
-        "character" : 0
-      },
-      "end" : {
-        "line" : 0,
-        "character" : 0
-      }
-    },
-    "severity" : 1,
-    "message" : "dataset id missing",
-    "tags" : [ ],
-    "relatedInformation" : [ ]
-  } ]
+  }
 }

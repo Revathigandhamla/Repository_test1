@@ -1,0 +1,134 @@
+name: project_sample1
+description: ''
+version: 0.0.1
+author: gandamala.revathi@wipro.com
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: projectsample1
+  parentArtefactID: gandamalarevathiwiprocomteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2025-07-30 16:58:25'
+pipelines:
+  pipelines/pipeline_sample1:
+    name: pipeline_sample1
+    description: ''
+    author: gandamala.revathi@wipro.com
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2025-07-30 16:58:25'
+    datasets:
+      inputs:
+      - gitUri=http://gitserver:3000/wvwrv9bI_team_5938/wvwrv9bI_project_13587.git&subPath=&tag=course_lab_sources/0.0.3&projectSubscriptionProjectId=13587&path=datasets/salesforce-Account
+      - gitUri=http://gitserver:3000/wvwrv9bI_team_5938/wvwrv9bI_project_13587.git&subPath=&tag=course_lab_sources/0.0.3&projectSubscriptionProjectId=13587&path=datasets/salesforce-Opportunity
+      outputs:
+      - datasets/accounts_delta_tb
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/accounts_delta_tb:
+    name: accounts_delta_tb
+    description: ''
+    author: gandamala.revathi@wipro.com
+    createdAt: '2025-08-02 05:30:50'
+    mode: batch
+    physicalDatasets:
+      workshop-fabric:
+        fabricId: 29144
+        datasetType: Database
+        description: ''
+        author: gandamala.revathi@wipro.com
+        createdAt: '2025-08-02 05:30:50'
+templates: {}
+jobs:
+  jobs/Daily_accountss:
+    name: Daily_accountss
+    description: ''
+    fabricUID: 29144
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 * * ? *
+    timeout: null
+    alerting:
+      emails: gandamalarevathi@gmail.com
+      onStart: true
+      onSuccess: true
+      onFailure: true
+    pipelines:
+    - pipelines/pipeline_sample1
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: true
+    createdAt: '2025-08-02 06:10:55'
+    author: gandamala.revathi@wipro.com
+    models: []
+    sqlProjects: []
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2025-07-30 16:58:25'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+  businessRules: {}
+subgraphs: {}
+sqlModels: {}
+sqlSnapshots: {}
+sqlTests: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies:
+- modifiedAt: '2025-07-30T16:58:25.896051Z'
+  name: plibMaven
+  version: 8.11.0
+  id: '1409433345'
+  createdAt: '2025-07-30T16:58:25.896051Z'
+  type: plibMaven
+- modifiedAt: '2025-07-30T16:58:25.896051Z'
+  name: plibPypi
+  version: 2.0.11
+  id: '508176616'
+  createdAt: '2025-07-30T16:58:25.896051Z'
+  type: plibPypi
+projectDependencies:
+  '13587':
+    projectUID: 13587
+    projectName: course_lab_sources
+    repositoryPath: gitUri=http://gitserver:3000/wvwrv9bI_team_5938/wvwrv9bI_project_13587.git&subPath=
+    version: course_lab_sources/0.0.3
+    isDefault: false
+    author: null
+    createdAt: '2025-07-30 16:56:48'
+  '12654':
+    projectUID: 12654
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12654.git&subPath=
+    version: 0.2.47
+    isDefault: true
+    author: null
+    createdAt: '2025-07-30 16:56:48'
+  '12655':
+    projectUID: 12655
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/DxEheDCJ_team_5751/DxEheDCJ_project_12655.git&subPath=
+    version: 0.0.10
+    isDefault: true
+    author: null
+    createdAt: '2025-07-30 16:56:48'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
